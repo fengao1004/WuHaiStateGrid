@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_pfbz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="left"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_nb_choose_y"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/checked" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_nb_choose_n"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/checked" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginRight="5dp"
+        android:background="#222222" />
+
+
+</LinearLayout>

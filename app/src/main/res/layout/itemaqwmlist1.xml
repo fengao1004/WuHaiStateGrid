@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+
+    android:background="@drawable/shapebgcon2"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="1dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_list_name"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:textSize="14sp"
+        android:gravity="left"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/fenshu"
+        android:paddingRight="30dp"
+        android:gravity="right|clip_horizontal"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:text="标准分100分"/>
+
+</LinearLayout>

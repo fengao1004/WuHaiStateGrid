@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/logo" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/name" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="基建工程辅助管理"
+            android:textColor="#343434"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="用户名"
+                android:textColor="#222222"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/shapeetbg"
+                android:hint="请输入用户名"
+                android:padding="10dp"
+
+                android:textColor="#111111"
+
+                android:textColorHint="#666666"
+                android:textStyle="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="密  码"
+                android:textColor="#222222"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_password"
+
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/shapeetbg"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="#111111"
+
+                android:textColorHint="#666666"
+                android:textStyle="" />
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shapebg"
+            android:onClick="login"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:text="登录"
+            android:layout_marginBottom="45dp"
+            android:textColor="#222222"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66222222"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

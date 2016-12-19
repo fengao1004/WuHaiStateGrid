@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fitsSystemWindows="false">
+
+            <TextView
+                android:id="@+id/tv_xm"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#28A69B"
+                android:gravity="center"
+                android:text="项目名称"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_choose2"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+   <android.support.v4.view.ViewPager
+
+       android:id="@+id/choose_list2_contant"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+   </android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ok" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="1dp"
+    android:background="@drawable/shapebgcon2"
+    android:orientation="horizontal"
+    android:translationZ="5dp">
+
+    <TextView
+        android:id="@+id/ldhq_number"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#111111"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#222222" />
+
+    <TextView
+        android:id="@+id/ldhq_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#111111"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#222222" />
+
+    <LinearLayout
+        android:id="@+id/ll_ldhq_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical"></LinearLayout>
+</LinearLayout>
