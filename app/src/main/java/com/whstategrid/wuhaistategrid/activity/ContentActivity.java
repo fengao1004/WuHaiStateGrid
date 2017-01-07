@@ -75,6 +75,7 @@ public class ContentActivity extends AppCompatActivity {
             ll_content.setVisibility(View.GONE);
         }
         list = new Constant().getlist();
+        int a ;
         list_content.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         list_content.setItemAnimator(new DefaultItemAnimator());
         list_content.setAdapter(new HomeAdapter());
@@ -85,6 +86,7 @@ public class ContentActivity extends AppCompatActivity {
             list2 = Constant_AQWMSGJCB_MAX.getAQWMSGJCB_InfoByName();
             String[] listNames =new String[27];
             for(int i = 0;i<27;i++){
+                int as =0;
                 listNames[i] = list2.get(i).listname;
             }
             list_content.setAdapter(new AQWMAdapter1(this, listNames, projectname,"show",1));
